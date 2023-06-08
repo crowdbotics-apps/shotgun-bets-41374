@@ -13,7 +13,7 @@ const Untitled4 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}><Pressable><Text style={styles.pnVDkbOL}>{"Jesse"}</Text></Pressable></View>
+          <View style={styles.column1}><Text style={styles.pnVDkbOL}>{"Jesse"}</Text><Pressable><Text style={styles.pZNasBCe}>{"Add Shotgun"}</Text></Pressable><Pressable><Text style={styles.lBsMxuwq}>{"Remove Shotgun"}</Text></Pressable></View>
           <View style={styles.column2}></View>
           <View style={styles.column3}></View>
         
@@ -30,10 +30,12 @@ const styles = StyleSheet.create({
     borderRadius: 40
   },
   column2: {
-    flex: 1
+    flex: 1,
+    borderRadius: 40
   },
   column3: {
-    flex: 1
+    flex: 1,
+    borderRadius: 40
   },
   pnVDkbOL: {
     width: 84,
@@ -48,8 +50,28 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     position: "absolute",
-    left: 123,
-    top: 76
+    left: 122,
+    top: 14
+  },
+  pZNasBCe: {
+    width: 100,
+    height: 48,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
+    textAlign: "center",
+    position: "relative",
+    top: 78.5
+  },
+  lBsMxuwq: {
+    width: 118,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
+    position: "absolute",
+    top: 78,
+    left: 218
   }
 });
 export default Untitled4;
